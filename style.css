@@ -5,8 +5,8 @@
 
 .mat-card{
     border-radius: 32px;
-    margin: 10px 10px;
-    padding: 10px;
+    margin: 15px 15px;
+    padding: 20px;
     border-color: rgb(19, 152, 41);
 }
 .mat-card#first-card{
@@ -14,7 +14,6 @@
 }
 
 div#profile-background {
-    background-color: blue;
     display: flex;
     z-index: 1;
 }
@@ -29,18 +28,20 @@ div#profile-background img{
     height: 200px;
     margin-top: -110px;
     z-index: 1;
+   display: block;
 }
-
+/*de acá para abajo son lo estilos de las barras y las tortas*/
 
 .mh-skills .mh-professional-skill {
-    padding-right: 60px;
+    padding: 30px 30px;
+
     color: green;
 }
 
 .mh-skills .mh-professional-skill h3 {
-    font-size: 50px;
+    font-size: 30px;
     line-height: 40px;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     margin-bottom: 60px;
     font-family: sans-serif;
@@ -48,7 +49,7 @@ div#profile-background img{
 }
 
 .mh-professional-skills {
-    padding-right: 20%;
+    padding: 5px 5px;
     color: green;
 }
 
@@ -73,7 +74,7 @@ div#profile-background img{
 
 .mh-progress {
     margin-bottom: 10px;
-    font: 900 1.14285/1 Cinzerl, cursive;
+    font: 900 1.14285/1  cursive;
     color: green
 }
 
@@ -100,8 +101,8 @@ div#profile-background img{
 
 .mh-progress .mh-progress-circle {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
 }
 
 .mh-progress path:nth-child(1) {
@@ -172,8 +173,6 @@ div#profile-background img{
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-name: animationProgress;
-    
-
     font-family: sans-serif;
 }
 
