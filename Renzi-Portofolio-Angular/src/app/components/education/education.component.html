@@ -7,16 +7,17 @@
                 <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"><i
                             class="fa-solid fa-pen-to-square"></i></a>
                 </div>
-                <h5>Una universidad</h5>
-                <p>Un título</p>
-                <h6><i class="fas fa-calendar my-2 mx-2"></i> 2011-2016</h6>
-                <hr>
-                <h5 class="mt-5">Otra universidad</h5>
-                <h6><i class="fas fa-calendar my-2 mx-2"></i> 2013-2016</h6>
-                <p> Master Degree</p>
-                <h5>Otra universidad</h5>
-                <h6><i class="fas fa-calendar my -2 mx-2"></i> 2013-2016</h6>
-                <p> Bachelor Degree</p>
+            
+               <ul>
+                    <li *ngFor="let education of educationList">
+                        <h5> {{education.school}} </h5>
+                        <p>{{education.degree}}</p>
+                        <h6><i class="fas fa-calendar my-2 mx-2"></i> 
+                         <time>{{education.start}}</time>   - <time>{{education.end}}</time> </h6>
+                    <hr>
+                    </li>
+                    
+             </ul> 
             </div>
         </div>
 

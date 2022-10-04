@@ -78,43 +78,23 @@
                         </div>
                         <h3>Habilidades técnicas</h3>
 
+                        <ul>
+                            <li *ngFor="let skill of technicalSkillList">
                         <div class="each-skill">
                             <div class="candidatos">
                                 <div class="parcial">
                                     <div class="info">
-                                        <div class="nome">Javascipt</div>
-                                        <div class="percentage-num">86%</div>
+                                        <div class="nome">{{skill.skill}}</div>
+                                        <div class="percentage-num">{{skill.experience}}%</div>
                                     </div>
                                     <div class="progressBar">
-                                        <div class="percentagem" style="width: 86%;"></div>
+                                        <div class="percentagem" style="width: {{skill.experience}}%;git"></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="candidatos">
-                                <div class="parcial">
-                                    <div class="info">
-                                        <div class="nome"><i class="fa-brands fa-css3-alt"></i>CSS</div>
-                                        <div class="percentage-num">46%</div>
-                                    </div>
-                                    <div class="progressBar">
-                                        <div class="percentagem" style="width: 46%;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="candidatos">
-                                <div class="parcial">
-                                    <div class="info">
-                                        <div class="nome">HTML</div>
-                                        <div class="percentage-num">50%</div>
-                                    </div>
-                                    <div class="progressBar">
-                                        <div class="percentagem" style="width:50%;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> 
                         </div>
+                        </li>
+                        </ul>
                     </div>
                 </div>
             </div>

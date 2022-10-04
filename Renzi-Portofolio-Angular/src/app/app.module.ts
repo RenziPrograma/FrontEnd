@@ -7,6 +7,9 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { ProfessionalSkillsComponent } from './components/professional-skills/professional-skills.component';
+import { RepositoryComponent } from './components/repository/repository.component';
+import { PortfolioService } from './services/portfolio.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { ProfessionalSkillsComponent } from './components/professional-skills/pr
     AboutmeComponent,
     WorkExperienceComponent,
     EducationComponent,
-    ProfessionalSkillsComponent
+    ProfessionalSkillsComponent,
+    RepositoryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

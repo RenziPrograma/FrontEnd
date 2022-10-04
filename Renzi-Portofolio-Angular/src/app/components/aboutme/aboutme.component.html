@@ -1,33 +1,29 @@
 <div class="card mat-card" id="first-card">
     <div class="row col-md-12">
-        <img src="../assets/banner.jpg" alt="code" class="card-img-top" height="500px" style="border-radius: 32px">
+        <img [src]="miPortfolio.representativeImage" alt="code" class="card-img-top" height="500px" style="border-radius: 32px">
 
         <div id="info-img">
-            <img class="profile-image " src="../assets/Renzi.jpeg" alt="Este soy yo">
+            <img class="profile-image " [src]="miPortfolio.profileImage" alt="Este soy yo">
             <div class="btn-edit" style="float: right; margin-right: 25px" onclick="cambiar_parrafo()">
                 <a href="#" class="btn-right">
                     <i class="fa-solid fa-pen-to-square"></i></a>
             </div>
 
             <div class="card-body">
-                <h3 class="card-title"> Renzo Coronado</h3>
+                <h3 class="card-title">{{miPortfolio.name}} </h3>
 
                 <p class="card-text" id="info-acerdade">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur repudiandae minima tempora
-                    aperiam vitae
-                    natus libero neque? Adipisci dignissimos eaque laboriosam omnis? Ipsa fugiat veniam beatae pariatur
-                    ullam quae
-                    iure.
+                    {{miPortfolio.description}}
                 </p>
                 <div>
                     <input id="editar-acercade" type="text" oninput="myFunction2(this.value)" style="display: none;">
                 </div>
-                <h6><i class="fas fa-briefcase mr-2"></i> Futuro programador full stack Jr</h6>
-                <h6><i class="fas fa-home mr-2"></i> Buenos Aires, Argentina</h6>
-                <h6><i class="fas fa-envelope mr-2"></i> renziprograma@gmail.com</h6>
+                <h6><i class="fas fa-briefcase mr-2"></i> {{miPortfolio.position}}</h6>
+                <h6><i class="fas fa-home mr-2"></i> {{miPortfolio.base}}</h6>
+                <h6><i class="fas fa-envelope mr-2"></i> {{miPortfolio.email}}</h6>
                 <h6><i class="fas fa-phone mr-2">
                         <!---- alt pone el teléfono al revés---->
-                    </i>Telefono</h6>
+                    </i>{{miPortfolio.telephone}}</h6>
             </div>
         </div>
     </div>

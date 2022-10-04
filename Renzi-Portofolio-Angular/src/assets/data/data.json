@@ -1,0 +1,78 @@
+     {
+            "name": "Renzo Coronado Posso",
+            "profileImage": "./assets/Renzi.jpeg",
+            "representativeImage":"./assets/banner.jpg",
+            "description": "lorem",
+            "position":"Futuro programador Full Stack",
+            "base":"Buenos Aires, Argentina",
+            "email":"renziprograma@gmail.com",
+            "telephone":"1234567890",
+
+                "workExperience": [
+                    {
+                        "business": "Brain Network Consulting Group",
+                        "position": "Coordinador de proyectos",
+                        "start": "01/12/2016",
+                        "end": "current",
+                        "description": "lorem"
+                    },
+                    {
+                        "business": "Brain Network Consulting Group",
+                        "position": "Coordinador de proyectos",
+                        "start": "01/12/2016",
+                        "end": "otra fecha",
+                        "description": "lorem"
+                    },
+                    {
+                        "business": "Brain Network Consulting Group",
+                        "position": "Coordinador de proyectos",
+                        "start": "01/12/2016",
+                        "end": "y otra fecha",
+                        "description": "lorem"
+                    }],
+                 "education": [
+                      {
+                        "school": "una escuela",
+                        "degree": "un título",
+                        "start": "01/12/2016",
+                        "end": "01/12/2021",
+                        "city": "Buenos Aires"
+                     },
+                     {
+                        "school": "otra escuela",
+                        "degree": "otro título",
+                        "start": "01/12/2016",
+                        "end": "01/12/2021",
+                        "city": "Buenos Aires"
+                     },
+                    {
+                        "school": "y otra escuela",
+                        "degree": "uy otro título título",
+                        "start": "01/12/2016",
+                        "end": "01/12/2021",
+                        "city": "Buenos Aires"
+                    }
+                    ],
+                    "technicalSkills": [
+                        {
+                            "skill": "HTML",
+                            "experience": "86"
+                        },
+                        {
+                            "skill": "CSS",
+                            "experience": "76"
+                        },
+                        {
+                            "skill": "JavaScript",
+                            "experience": "56"
+                        },
+                        {
+                            "skill": "Angular",
+                            "experience": "46"
+                        }
+                    ]              
+
+
+    }
+    
+
