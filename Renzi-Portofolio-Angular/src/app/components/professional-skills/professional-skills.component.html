@@ -2,75 +2,41 @@
     <section class="mh-skills" id="mh-skills">
 
         <div class="row ">
-            <div class="col-sm-6 col-md-12">
+            <div class="col-sm-4 col-sm-4 col-lg-">
                 <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"><i
                             class="fa-solid fa-pen-to-square"></i></a>
                 </div>
-                <div class="mh-professional-skills">
+                <div class=" mh-professional-skills ">
                     <h3>Habilidades Profesionales</h3>
-                    <ul class="mh-professional-progress">
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Comunicaciones</div>
-                        </li>
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Comunicaciones</div>
-                        </li>
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Comunicaciones</div>
-                        </li>
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Comunicaciones</div>
-                        </li>
+                    <div >
+                        <ul>
+                            <li *ngFor="let skill of technicalSkillList">
+                                <circle-progress
+                                    [percent]="85"
+                                    [radius]="50"
+                                    [title]="'xxxx'"
+                                    [titleColor]="'green'"
+                                    [showSubtitle]="false"
+                                    [titleFontSize]="'1em'"
+                                    [showUnits]="false"
+                                    [imageSrc]="''"
+                                    [imageWidth]="50"
+                                    [imageWidth]="50"
+                                    [showImage]="false"
+                                    [outerStrokeWidth]="2"
+                                    [innerStrokeWidth]="4"
+                                    [outerStrokeColor]="'#78C000'"
+                                    [innerStrokeColor]="'#C7E596'"
+                                    [animation]="true"
+                                    [animationDuration]="800">
+                                </circle-progress>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="55"></div>
-                            <div class="pr-skill-name"> Trabajo en equipo</div>
-                        </li>
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Project Managent</div>
-                        </li>
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="80"></div>
-                            <div class="pr-skill-name"> Creatividad</div>
-                        </li>
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Comunicaciones</div>
-                        </li>
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="55"></div>
-                            <div class="pr-skill-name"> Trabajo en equipo</div>
-                        </li>
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="95"></div>
-                            <div class="pr-skill-name"> Project Managent</div>
-                        </li>
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="80"></div>
-                            <div class="pr-skill-name"> Creatividad</div>
-                        </li>
-
-
-                        <li>
-                            <div class="mh-progress mh-progress-circle" data-progress="80"></div>
-                            <div class="pr-skill-name"> Creatividad</div>
-                        </li>
-
-
-                    </ul>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-12">
+            <div class="col-sm-6 col-md-6 col-lg-12">
                 <div class="mh-skills-inner">
                     <div class="mh-professional-skill">
                         <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"><i
@@ -88,7 +54,7 @@
                                         <div class="percentage-num">{{skill.experience}}%</div>
                                     </div>
                                     <div class="progressBar">
-                                        <div class="percentagem" style="width: {{skill.experience}}%;git"></div>
+                                        <div class="percentagem" style="width:{{skill.experience}}%"></div>
                                     </div>
                                 </div>
                             </div> 

@@ -1,0 +1,11 @@
+.card-body {
+    font-family: sans-serif;
+    color: black;
+}
+
+.mat-card {
+    border-radius: 32px;
+    margin: 15px 15px;
+    padding: 20px;
+    border-color: rgb(19, 152, 41);
+}

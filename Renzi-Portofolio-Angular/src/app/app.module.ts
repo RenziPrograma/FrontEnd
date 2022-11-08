@@ -10,6 +10,7 @@ import { ProfessionalSkillsComponent } from './components/professional-skills/pr
 import { RepositoryComponent } from './components/repository/repository.component';
 import { PortfolioService } from './services/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,13 @@ import { HttpClientModule } from '@angular/common/http';
     WorkExperienceComponent,
     EducationComponent,
     ProfessionalSkillsComponent,
-    RepositoryComponent
+    RepositoryComponent,
+
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]

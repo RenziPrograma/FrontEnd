@@ -70,7 +70,30 @@
                             "skill": "Angular",
                             "experience": "46"
                         }
-                    ]              
+                    ] ,
+                    "softSkills": [
+                        {
+                            "skill": "Trabajo en equipo",
+                            "experience": "86"
+                        },
+                        {
+                            "skill": "Comunicación asertiva",
+                            "experience": "76"
+                        },
+                        {
+                            "skill": "Project Management",
+                            "experience": "56"
+                        },
+                        {
+                            "skill": "Resolución de problemas",
+                            "experience": "46"
+                        },
+                        {
+                            "skill": "Liderazgo",
+                            "experience": "46"
+                        }
+                    ]
+             
 
 
     }

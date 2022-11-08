@@ -1,21 +1,20 @@
 <div class="card mat-card">
-    <div class="col-sm-12">
-    <ul>
+    <div class="row col-sm-12">
+        <ul>
             <div class="card-title">
-            <div class="card-body">
-            <li *ngFor="let experience of experienceList">
-                <h2><i class="fas fa-suitcase"> </i> {{experience.business}} </h2>
-                <h5>{{experience.position}}</h5>
-                <h6><i class="fas fa-calendar mr-2"></i> 
-                  <time>{{experience.start}}</time> - <time> {{experience.end}}</time> 
-                </h6>
-                <p>{{experience.description}}</p>
-            </li>
+                <div class="card-body">
+                    <li *ngFor="let experience of experienceList">
+                        <h2><i class="fas fa-suitcase"> </i> {{experience.business}} </h2>
+                        <h5> {{experience.position}}</h5>
+                        <h6><i class="fas fa-calendar mr-2"></i> 
+                        <time> {{experience.start}}</time> - <time> {{experience.end}}</time> 
+                        </h6>
+                        <p>{{experience.description}}</p>
+                    </li>
+                </div>
             </div>
-        </div>
-        <hr>
-
-    </ul>
+        
+        </ul>
     </div>
 </div>
 
