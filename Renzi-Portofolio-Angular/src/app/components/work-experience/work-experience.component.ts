@@ -12,8 +12,8 @@ export class WorkExperienceComponent implements OnInit {
   experienceList: any;
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.experienceList = data.workExperience;
+    this.datosPortfolio.getPersona().subscribe(data => {
+     /* this.experienceList = data.workExperience;*/
     })
   }
 

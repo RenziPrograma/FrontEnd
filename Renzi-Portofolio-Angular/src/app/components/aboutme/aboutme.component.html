@@ -1,29 +1,29 @@
 <div class="card mat-card" id="first-card">
     <div class="row col-md-12">
-        <img [src]="miPortfolio.representativeImage" alt="code" class="card-img-top" height="500px" style="border-radius: 32px">
+        <img [src]="persona.representativaImageUrl" alt="code" class="card-img-top" height="500px" style="border-radius: 32px">
 
         <div id="info-img">
-            <img class="profile-image" [src]="miPortfolio.profileImage" alt="Este soy yo" >
+            <img class="profile-image" [src]="persona.profileImageUrl" alt="Este soy yo" >
             <div class="btn-edit" style="float: right; margin-right: 25px" onclick="cambiar_parrafo()">
                 <a href="#" class="btn-right">
                     <i class="fa-solid fa-pen-to-square"></i></a>
             </div>
 
             <div class=" card-body">
-                <h3 class="card-title">{{miPortfolio.name}} </h3>
+                <h3 class="card-title">{{persona.name}} {{persona.surname}} </h3>
 
                 <p class="card-text" id="info-acerdade">
-                    {{miPortfolio.description}}
+                    {{persona.description}}
                 </p>
                 <div>
                     <input id="editar-acercade" type="text" oninput="myFunction2(this.value)" style="display: none;">
                 </div>
-                <h6><i class="fas fa-briefcase mr-2"></i> {{miPortfolio.position}}</h6>
-                <h6><i class="fas fa-home mr-2"></i> {{miPortfolio.base}}</h6>
-                <h6><i class="fas fa-envelope mr-2"></i> {{miPortfolio.email}}</h6>
+                <h6><i class="fas fa-briefcase mr-2"></i> {{persona.position}}</h6>
+                <h6><i class="fas fa-home mr-2"></i> {{persona.base}}</h6>
+                <h6><i class="fas fa-envelope mr-2"></i> {{persona.email}}</h6>
                 <h6><i class="fas fa-phone mr-2">
                         <!---- alt pone el teléfono al revés---->
-                    </i>{{miPortfolio.telephone}}</h6>
+                    </i>{{persona.telephone}}</h6>
             </div>
         </div>
     </div>

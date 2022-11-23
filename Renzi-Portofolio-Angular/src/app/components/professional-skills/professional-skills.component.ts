@@ -11,8 +11,8 @@ export class ProfessionalSkillsComponent implements OnInit {
   constructor(private datosPortfolio:PortfolioService) { }
   technicalSkillList: any;
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.technicalSkillList = data.technicalSkills;
+    this.datosPortfolio.getPersona().subscribe(data => {
+     /* this.technicalSkillList = data.technicalSkills;*/
     })
   }
 
