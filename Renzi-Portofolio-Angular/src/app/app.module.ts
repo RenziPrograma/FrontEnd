@@ -11,6 +11,15 @@ import { RepositoryComponent } from './components/repository/repository.componen
 import { PortfolioService } from './services/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { LoginComponent } from './components/login/login.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { interceptorProvider } from './services/interceptor-service';
+import { NewWorkExperienceComponent } from './components/work-experience/new-work-experience.component';
+import { EditWorkExperienceComponent } from './components/work-experience/edit-work-experience.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,14 +30,23 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     EducationComponent,
     ProfessionalSkillsComponent,
     RepositoryComponent,
+    LoginComponent,
+    PortfolioComponent,
+    NewWorkExperienceComponent,
+    EditWorkExperienceComponent,
+
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    FormsModule,
+    AppRoutingModule,
+    ReactiveFormsModule
+    
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService, interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

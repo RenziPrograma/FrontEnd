@@ -1,24 +1,24 @@
 export class persona{
     id?: number;
-    name: String;
-    surname: String;
-    position: String;
-    base: String;
-    email: String;
-    telephone: String;
-    profileImageUrl: String;
-    representativaImageUrl: String;
-    description: String;
+    name: string;
+    surname: string;
+    position: string;
+    base: string;
+    email: string;
+    telephone: string;
+    profileImageUrl: string;
+    representativaImageUrl: string;
+    description: string;
 
-    constructor(name: String,
-        surname: String,
-        position: String,
-        base: String,
-        email: String,
-        telephone: String,
-        profileImageUrl: String,
-        representativaImageUrl: String,
-        description: String) {
+    constructor(name: string,
+        surname: string,
+        position: string,
+        base: string,
+        email: string,
+        telephone: string,
+        profileImageUrl: string,
+        representativaImageUrl: string,
+        description: string) {
         this.name = name;
         this.surname = surname;
         this.position = position;
