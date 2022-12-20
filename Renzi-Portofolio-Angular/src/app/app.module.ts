@@ -18,6 +18,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { interceptorProvider } from './services/interceptor-service';
 import { NewWorkExperienceComponent } from './components/work-experience/new-work-experience.component';
 import { EditWorkExperienceComponent } from './components/work-experience/edit-work-experience.component';
+import { NewEducationComponent } from './components/education/new-education.component';
+import { EdiEducationComponent } from './components/education/edit-education.component';
+import { EditSkillsComponent } from './components/professional-skills/edit-skills.component';
+import { NewSkillComponent } from './components/professional-skills/new-skill.component';
+
 
 
 
@@ -34,6 +39,11 @@ import { EditWorkExperienceComponent } from './components/work-experience/edit-w
     PortfolioComponent,
     NewWorkExperienceComponent,
     EditWorkExperienceComponent,
+    NewEducationComponent,
+    EdiEducationComponent,
+    EditSkillsComponent,
+    NewSkillComponent,
+
 
 
   ],

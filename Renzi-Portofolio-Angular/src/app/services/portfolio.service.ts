@@ -1,18 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { persona } from '../model/persona.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PortfolioService {
-  URL = "http://localhost:8080";
+  URL = environment.URL;
 
   constructor(private http:HttpClient ) { }
 
   public getPersona():Observable<persona> {
-    return this.http.get<persona>(this.URL +"/buscar/persona/:persona_id");
+    return this.http.get<persona>(this.URL +"buscar/persona/:persona_id");
 }
 
 }
