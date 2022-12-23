@@ -1,0 +1,42 @@
+<div class="card mat-card">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="card-title">
+                <div class="card-body">
+                    <h2 class="my-4"> <i class="fas fa-certificate"></i> Experiencia laboral</h2>
+                    <ul>
+                        <li *ngFor="let experiencia of experiencia">
+
+                            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                    routerLink="/editExp/{{experiencia.id}}">
+                                    <i class="fa-solid fa-pen-to-square" *ngIf="isLogged"></i></a>
+                            </div>
+                            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                    (click)="delete(experiencia.id)">
+                                    <i class="fa-solid fa-trash" *ngIf="isLogged"></i>
+                                </a>
+                            </div>
+                            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                    routerLink="/newExp" *ngIf="isLogged">
+                                    <i class="fa-solid fa-plus"></i></a>
+                            </div>
+                            <h5> {{experiencia.businessName}} </h5>
+                            <p>{{experiencia.position}}</p>
+                            <h6><i class="fas fa-calendar my-2 mx-2"></i>
+                                <time>{{experiencia.startDate}}</time> - <time>{{experiencia.endDate}}</time>
+                            </h6>
+
+                            <h4>Descripción:</h4>
+                            <p>{{experiencia.description}}</p>
+                            <hr>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="id"> </label>
+                <input type="hidden" class="form-control" id="id" name="id" [(ngModel)]="persona.id" required>
+                <label for="name"> Nombre de la persona</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="persona.name" required>
+                <label for="surname"> Apellido</label>
+                <input type="text" class="form-control" id="" name="surname" [(ngModel)]="persona.surname" required>
+                <label for="position"> Posición</label>
+                <input type="text" class="form-control" id="position" name="position" [(ngModel)]="persona.position"
+                    required>
+                <label for="base">
+                    <base href="">
+                </label>
+                <input type="text" class="form-control" id="base" name="base" [(ngModel)]="persona.base" required>
+                <label for="email"> Ubicación</label>
+                <input type="text" class="form-control" id="email" name="email" [(ngModel)]="persona.email" required>
+                <label for="telephone"> Teléfono</label>
+                <input type="text" class="form-control" id="telephone" name="telephone" [(ngModel)]="persona.telephone"
+                    required>
+
+                <label for="img"> Foto de perfil</label>
+                <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.profileImageUrl"
+                    (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
+
+                <label for="img"> Imagen representativa</label>
+                <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.representativaImageUrl"
+                    (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
+
+
+                <label for="description"> Descripción</label>
+                <input type="text" class="form-control" id="description" name="description"
+                    [(ngModel)]="persona.description" required>
+            </div>
+            <br>
+            <button class="btn btn-primary">
+                Actualizar persona
+            </button>
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,5 @@
+desde la consola---> ng new nombre-proyecto
+
+iniciar servidor ng serve
+
+Después de un commit puede fallar el compilador, reiniciar servidor

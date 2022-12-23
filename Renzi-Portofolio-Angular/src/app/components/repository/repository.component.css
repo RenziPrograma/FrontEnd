@@ -1,0 +1,29 @@
+.card-body {
+    font-family: sans-serif;
+    color: black;
+}
+
+.mat-card {
+    border-radius: 32px;
+    margin: 15px 15px;
+    padding: 20px;
+    border-color: rgb(19, 152, 41);
+}
+
+p{
+    padding: 20px;
+}
+
+.container{
+    width: auto;
+}
+
+.info, .imagen{
+    display: inline-block;
+    text-align:justify;
+}
+
+.imagen{
+    box-shadow: 10px 10px 30px rgb(19, 152, 41);
+    width: 30%;
+}

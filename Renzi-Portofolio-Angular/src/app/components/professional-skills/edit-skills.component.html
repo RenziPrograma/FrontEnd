@@ -1,0 +1,21 @@
+<div class="container" *ngIf="skill">
+    <div class="row">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="persona_id"> </label>
+                <input type="hidden" class="form-control" id="persona_id" name="persona_id"
+                    [(ngModel)]="skill.persona_id" required>
+                <label for="skillName"> Nombre de la Institución</label>
+                <input type="text" class="form-control" id="skillName" name="skillName"
+                    [(ngModel)]="skill.skillName" required>
+                <label for="skillLevel"> Título alcanzado</label>
+                <input type="text" class="form-control" id="" name="skillLevel" [(ngModel)]="skill.skillLevel" required>
+            </div>
+            <button class="btn btn-primary">
+                Actualizar habilidad
+            </button>
+        </form>
+
+    </div>
+
+</div>

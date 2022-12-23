@@ -1,0 +1,84 @@
+<div class="card mat-card">
+       <div class="row ">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class=" text-center col-sm-4 col-md-4 col-lg-3 " *ngFor="let skill of skill">
+                                <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#"
+                                        class="btn-right" routerLink="/editSkill/{{skill.id}}">
+                                        <i class="fa-solid fa-pen-to-square" *ngIf="isLogged"></i></a>
+                                </div>
+                                <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#"
+                                        class="btn-right" (click)="delete(skill.id)">
+                                        <i class="fa-solid fa-trash" *ngIf="isLogged"></i>
+                                    </a>
+                                </div>
+                                <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#"
+                                        class="btn-right" routerLink="/newSkill" *ngIf="isLogged">
+                                        <i class="fa-solid fa-plus"></i></a>
+                                </div>
+                                <circle-progress
+                                    [percent]="(skill.skillLevel)"
+                                    [radius]="50" [title]="(skill.skillName)"
+                                    [titleColor]="'green'" 
+                                    [showSubtitle]="false" 
+                                    [titleFontSize]="'1em'"
+                                    [showUnits]="false" 
+                                    [imageSrc]="''" 
+                                    [imageWidth]="50" 
+                                    [imageWidth]="50" 
+                                    [showImage]="false" 
+                                    [outerStrokeWidth]="2"
+                                    [innerStrokeWidth]="4" 
+                                    [outerStrokeColor]="'#78C000'" 
+                                    [innerStrokeColor]="'#C7E596'" 
+                                    [animation]="true"
+                                    [animationDuration]="800">
+                                </circle-progress>
+
+        </div>
+            <!----
+            <div class="col-sm-6 col-md-6 col-lg-12">
+                <div class="mh-skills-inner">
+                    <div class="mh-professional-skill">
+                        <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"><i
+                                    class="fa-solid fa-pen-to-square"></i></a>
+                        </div>
+
+                 
+                        <h3>Habilidades técnicas</h3>
+
+                        <ul>
+                            <li *ngFor="let skill of skill">
+                                <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                        routerLink="/editSkill/{{skill.id}}">
+                                        <i class="fa-solid fa-pen-to-square" *ngIf="isLogged"></i></a>
+                                </div>
+                                <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right" (click)="delete(skill.id)"><i class="fa-solid fa-trash" *ngIf="isLogged"></i>                                    </a>
+                                </div>
+                                <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right" routerLink="/newSkill" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></a>
+                                </div>
+                                <div class="each-skill">
+                                    <div class="candidatos">
+                                        <div class="parcial">
+                                            <div class="info">
+                                                <div class="nome">{{skill.skillName}}</div>
+                                                <div class="percentage-num">{{skill.skillLevel}}%</div>
+                                            </div>
+                                            <div class="progressBar">
+                                                <div class="percentagem" style="width:{{skill.skillLevel}}%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            --->
+        </div>
+
+
+
+</div>

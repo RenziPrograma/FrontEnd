@@ -1,0 +1,42 @@
+<div class="card mat-card">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="card-title">
+                <div class="card-body">
+                    <h2 class="my-4"> <i class="fas fa-certificate"></i> Educación</h2>
+                    <ul>
+                        <li *ngFor="let education of education">
+
+                            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                    routerLink="/editEdu/{{education.id}}">
+                                    <i class="fa-solid fa-pen-to-square" *ngIf="isLogged"></i></a>
+                            </div>
+                            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                    (click)="delete(education.id)">
+                                    <i class="fa-solid fa-trash" *ngIf="isLogged"></i>
+                                </a>
+                            </div>
+                            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                                    routerLink="/newEdu" *ngIf="isLogged">
+                                    <i class="fa-solid fa-plus"></i></a>
+                            </div>
+                            <h5> {{education.schoolName}} </h5>
+                            <p>{{education.degree}}</p>
+                            <h6><i class="fas fa-calendar my-2 mx-2"></i>
+                                <time>{{education.startDate}}</time> - <time>{{education.endDate}}</time>
+                            </h6>
+
+                            <h4>Descripción:</h4>
+                            <p>{{education.description}}</p>
+                            <hr>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

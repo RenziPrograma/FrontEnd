@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="persona_id"> </label>
+                <input type="hidden" class="form-control" id="persona_id" name="persona_id" [(ngModel)]="persona_id"
+                    required>
+                <label for="skillName"> Nombre habilidad</label>
+                <input type="text" class="form-control" id="skillName" name="skillName" [(ngModel)]="skillName"
+                    required>
+                <label for="level"> Nivel de dominio</label>
+                <input type="text" class="form-control" id="" name="level" [(ngModel)]="skillLevel" required>
+            </div>
+            <button class="btn btn-primary">
+                agregar nueva habilidad
+            </button>
+        </form>
+
+    </div>
+
+</div>
