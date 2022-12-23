@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TechSkills } from 'src/app/model/techSkills';
-import { PortfolioService } from 'src/app/services/portfolio.service';
 import { TechSkillsService } from 'src/app/services/tech-skills.service';
 import { TokenService } from 'src/app/services/token.service';
 

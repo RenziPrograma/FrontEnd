@@ -1,12 +1,13 @@
 <div class="card mat-card" id="first-card">
-    <div class="row col-md-12">
-        <img [src]="persona.representativaImageUrl" alt="code" class="card-img-top" height="500px" style="border-radius: 32px">
+    <div class="row col-md-12" *ngFor="let persona of persona">
+        <img [src]="persona.representativaImageUrl" alt="code" class="card-img-top" height="500px"
+            style="border-radius: 32px">
 
         <div id="info-img">
-            <img class="profile-image" [src]="persona.profileImageUrl" alt="Este soy yo" >
-            <div class="btn-edit" style="float: right; margin-right: 25px" onclick="cambiar_parrafo()">
-                <a href="#" class="btn-right">
-                    <i class="fa-solid fa-pen-to-square" ></i></a>
+            <img class="profile-image" [src]="persona.profileImageUrl" alt="Este soy yo">
+            <div class="btn-edit" style="float: right; margin-right: 25px"><a href="#" class="btn-right"
+                    routerLink="/editPersona/{{persona.id}}">
+                    <i class="fa-solid fa-pen-to-square" *ngIf="isLogged"></i></a>
             </div>
 
             <div class=" card-body">

@@ -8,7 +8,7 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
 import { EducationComponent } from './components/education/education.component';
 import { ProfessionalSkillsComponent } from './components/professional-skills/professional-skills.component';
 import { RepositoryComponent } from './components/repository/repository.component';
-import { PortfolioService } from './services/portfolio.service';
+import { PersonaService } from './services/persona-service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { LoginComponent } from './components/login/login.component';
@@ -22,6 +22,7 @@ import { NewEducationComponent } from './components/education/new-education.comp
 import { EdiEducationComponent } from './components/education/edit-education.component';
 import { EditSkillsComponent } from './components/professional-skills/edit-skills.component';
 import { NewSkillComponent } from './components/professional-skills/new-skill.component';
+import { EditAboutMeComponent } from './components/aboutme/edit-about-me.component';
 
 
 
@@ -43,6 +44,7 @@ import { NewSkillComponent } from './components/professional-skills/new-skill.co
     EdiEducationComponent,
     EditSkillsComponent,
     NewSkillComponent,
+    EditAboutMeComponent,
 
 
 
@@ -56,7 +58,7 @@ import { NewSkillComponent } from './components/professional-skills/new-skill.co
     ReactiveFormsModule
     
   ],
-  providers: [PortfolioService, interceptorProvider],
+  providers: [PersonaService, interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
