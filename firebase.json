@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/renzi-portofolio-angular",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

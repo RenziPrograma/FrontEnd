@@ -23,6 +23,9 @@ import { EdiEducationComponent } from './components/education/edit-education.com
 import { EditSkillsComponent } from './components/professional-skills/edit-skills.component';
 import { NewSkillComponent } from './components/professional-skills/new-skill.component';
 import { EditAboutMeComponent } from './components/aboutme/edit-about-me.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -55,7 +58,9 @@ import { EditAboutMeComponent } from './components/aboutme/edit-about-me.compone
     NgCircleProgressModule.forRoot({}),
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
     
   ],
   providers: [PersonaService, interceptorProvider],
