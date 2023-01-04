@@ -7,7 +7,7 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { ProfessionalSkillsComponent } from './components/professional-skills/professional-skills.component';
-import { RepositoryComponent } from './components/repository/repository.component';
+import { ProjectRepoComponent } from './components/projectRepo/projectRepo.component';
 import { PersonaService } from './services/persona-service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -26,6 +26,8 @@ import { EditAboutMeComponent } from './components/aboutme/edit-about-me.compone
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditProjectRepoComponent } from './components/projectRepo/edit-project-repo.component';
+import { NewProjectRepoComponent } from './components/projectRepo/new-project-repo.component';
 
 
 
@@ -38,7 +40,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     WorkExperienceComponent,
     EducationComponent,
     ProfessionalSkillsComponent,
-    RepositoryComponent,
+    ProjectRepoComponent,
     LoginComponent,
     PortfolioComponent,
     NewWorkExperienceComponent,
@@ -48,6 +50,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditSkillsComponent,
     NewSkillComponent,
     EditAboutMeComponent,
+    EditProjectRepoComponent,
+    NewProjectRepoComponent,
 
 
 

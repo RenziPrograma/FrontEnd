@@ -13,7 +13,7 @@ export class ProfessionalSkillsComponent implements OnInit {
   skill: TechSkills[]= [];
 
 
-  constructor(private techSkillsService: TechSkillsService, private tokenService: TokenService, private router: Router) { }
+  constructor(private techSkillsService: TechSkillsService, private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {

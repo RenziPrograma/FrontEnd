@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { EditSkillsComponent } from './components/professional-skills/edit-skills.component';
 import { NewSkillComponent } from './components/professional-skills/new-skill.component';
+import { EditProjectRepoComponent } from './components/projectRepo/edit-project-repo.component';
+import { NewProjectRepoComponent } from './components/projectRepo/new-project-repo.component';
 import { EditWorkExperienceComponent } from './components/work-experience/edit-work-experience.component';
 import { NewWorkExperienceComponent } from './components/work-experience/new-work-experience.component';
 
@@ -21,7 +23,10 @@ const routes: Routes = [
     { path: 'editEdu/:id', component: EdiEducationComponent },
     { path: 'newSkill', component: NewSkillComponent },
     { path: 'editSkill/:id', component: EditSkillsComponent },
-    { path: 'editPersona/:id', component: EditAboutMeComponent }
+    { path: 'editPersona/:id', component: EditAboutMeComponent },
+    { path: 'newProject', component: NewProjectRepoComponent },
+    { path: 'editProject/:id', component: EditProjectRepoComponent }
+
 ];
 
 

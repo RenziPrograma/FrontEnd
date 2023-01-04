@@ -2,9 +2,11 @@
     <div class="row">
         <div class="col-sm-12">
 
-            <div class="card-title">
+            <div class="card-title" ><a href="#" class="btn-left" routerLink="/newExp" *ngIf="isLogged">
+                <i class="fa-solid fa-plus"></i></a>
                 <div class="card-body">
                     <h2 class="my-4"> <i class="fas fa-certificate"></i> Experiencia laboral</h2>
+                    
                     <ul>
                         <li *ngFor="let experiencia of experiencia">
 

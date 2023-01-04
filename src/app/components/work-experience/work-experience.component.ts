@@ -13,7 +13,7 @@ import { WorkExperienceServiceService } from 'src/app/services/work-experience-s
 export class WorkExperienceComponent implements OnInit {
   experiencia: WorkExperience[] = [];
 
-  constructor(private workExperienceServiceService: WorkExperienceServiceService, private tokenService: TokenService, private router: Router) { }
+  constructor(private workExperienceServiceService: WorkExperienceServiceService, private tokenService: TokenService) { }
   
   isLogged = false;
 
