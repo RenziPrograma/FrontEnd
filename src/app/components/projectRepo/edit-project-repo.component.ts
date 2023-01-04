@@ -16,8 +16,10 @@ export class EditProjectRepoComponent implements OnInit {
     private projectRepoService: ProjectRepoService,
     private activatedRouter: ActivatedRoute,
     private router: Router,
-    private imageService: ImageService) { }
+    public imageService: ImageService) { }
 
+  
+  
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.projectRepoService.detail(id).subscribe(

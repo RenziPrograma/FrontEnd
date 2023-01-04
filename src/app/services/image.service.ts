@@ -9,6 +9,11 @@ export class ImageService {
 
   constructor(private storage: Storage) { }
 
+  clearUrl() {
+    this.url = "";
+  }
+
+
   uploadImage($event: any, name: string) {
     const file = $event.target.files[0]
     const imgRef = ref(this.storage, `image/` + name)

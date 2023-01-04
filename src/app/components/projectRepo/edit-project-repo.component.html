@@ -20,7 +20,9 @@
                 <input type="text" class="form-control" id="description" name="description"
                     [(ngModel)]="project.description" required>
             </div>
-
+           <div class="div">
+            <img [src]="imageService.url" alt="">
+           </div> 
             <br>
             <button class="btn btn-primary">
                 Actualizar proyecto en el repositorio
