@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="persona_id"> </label>
+                <input type="hidden" class="form-control" id="persona_id" name="persona_id" [(ngModel)]="persona_id"
+                    required>
+                <label for="name"> Nombre del proyecto</label>
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name"
+                    required>
+                <label for="link"> Link al repositorio</label>
+                <input type="text" class="form-control" id="" name="link" [(ngModel)]="link" required>
+                
+                <label for="img"> Imagen del repositorio</label>
+                <input type="file" class="form-control" id="img" name="img" [(ngModel)]="img"
+                    (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
+
+                <label for="description"> Descripción del repositorio</label>
+                <input type="text" class="form-control" id="description" name="description" [(ngModel)]="description"
+                    required>
+            </div>
+            <br>
+            <button class="btn btn-primary">
+                agregar nuevo proyecto al repositorio
+            </button>
+        </form>
+
+    </div>
+
+</div>

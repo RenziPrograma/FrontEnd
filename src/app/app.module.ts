@@ -7,7 +7,7 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { ProfessionalSkillsComponent } from './components/professional-skills/professional-skills.component';
-import { RepositoryComponent } from './components/repository/repository.component';
+import { ProjectRepoComponent } from './components/projectRepo/projectRepo.component';
 import { PersonaService } from './services/persona-service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -23,6 +23,11 @@ import { EdiEducationComponent } from './components/education/edit-education.com
 import { EditSkillsComponent } from './components/professional-skills/edit-skills.component';
 import { NewSkillComponent } from './components/professional-skills/new-skill.component';
 import { EditAboutMeComponent } from './components/aboutme/edit-about-me.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditProjectRepoComponent } from './components/projectRepo/edit-project-repo.component';
+import { NewProjectRepoComponent } from './components/projectRepo/new-project-repo.component';
 
 
 
@@ -35,7 +40,7 @@ import { EditAboutMeComponent } from './components/aboutme/edit-about-me.compone
     WorkExperienceComponent,
     EducationComponent,
     ProfessionalSkillsComponent,
-    RepositoryComponent,
+    ProjectRepoComponent,
     LoginComponent,
     PortfolioComponent,
     NewWorkExperienceComponent,
@@ -45,6 +50,8 @@ import { EditAboutMeComponent } from './components/aboutme/edit-about-me.compone
     EditSkillsComponent,
     NewSkillComponent,
     EditAboutMeComponent,
+    EditProjectRepoComponent,
+    NewProjectRepoComponent,
 
 
 
@@ -55,7 +62,9 @@ import { EditAboutMeComponent } from './components/aboutme/edit-about-me.compone
     NgCircleProgressModule.forRoot({}),
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
     
   ],
   providers: [PersonaService, interceptorProvider],
