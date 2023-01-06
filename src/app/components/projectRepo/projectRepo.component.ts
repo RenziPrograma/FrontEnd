@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ProjectRepo } from 'src/app/model/project-repo';
 import { ProjectRepoService } from 'src/app/services/project-repo.service';
 import { TokenService } from 'src/app/services/token.service';
@@ -11,9 +12,11 @@ import { TokenService } from 'src/app/services/token.service';
 export class ProjectRepoComponent implements OnInit {
   project: ProjectRepo[] = [];
 
-  constructor(private projectRepoService: ProjectRepoService, private tokenService:TokenService) { }
+  constructor(private projectRepoService: ProjectRepoService, private tokenService: TokenService) { }
+
   isLogged = false;
 
+  
   ngOnInit(): void {
     this.loadProject();
     if (this.tokenService.getToken()) {

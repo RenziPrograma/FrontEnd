@@ -15,7 +15,9 @@ export class NewProjectRepoComponent implements OnInit {
   img: string;
   description: string;
 
-  constructor(private projectRepoService: ProjectRepoService, private router: Router) { }
+  constructor(private projectRepoService: ProjectRepoService,
+     private router: Router
+      ) { }
 
   ngOnInit(): void {
   }
@@ -39,9 +41,6 @@ export class NewProjectRepoComponent implements OnInit {
     )
     
   }
-
-
-
 
 
   uploadImage($event: any) {
