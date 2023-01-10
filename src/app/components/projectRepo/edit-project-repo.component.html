@@ -21,7 +21,7 @@
                     [(ngModel)]="project.description" required>
             </div>
            <div class="div">
-            <img [src]="imageService.url" alt="">
+            <img [src]="safeImageUrl"  *ngIf='safeImageUrl.url != ""'>
            </div> 
             <br>
             <button class="btn btn-primary">

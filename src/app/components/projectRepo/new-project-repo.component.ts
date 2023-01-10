@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectRepo } from 'src/app/model/project-repo';
+import { ImageService } from 'src/app/services/image.service';
 import { ProjectRepoService } from 'src/app/services/project-repo.service';
 
 @Component({
@@ -9,21 +11,30 @@ import { ProjectRepoService } from 'src/app/services/project-repo.service';
   styleUrls: ['./new-project-repo.component.css']
 })
 export class NewProjectRepoComponent implements OnInit {
+  id: number;
   persona_id: number = 1;
   name: string;
   link: string;
   img: string;
   description: string;
+  safeImageUrl: any;
+  project: ProjectRepo;
 
   constructor(private projectRepoService: ProjectRepoService,
-     private router: Router
-      ) { }
+    private router: Router,
+    private activatedRouter: ActivatedRoute,
+    public imageService: ImageService,
+    private sanitizer: DomSanitizer
+  ) { }
 
   ngOnInit(): void {
   }
 
-  onCreate(): void { 
+  onCreate(): void {
+
+    
     const projectRepo = new ProjectRepo(
+      this.id,
       this.persona_id,
       this.name,
       this.link,
@@ -39,10 +50,13 @@ export class NewProjectRepoComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
-    
+
   }
 
 
   uploadImage($event: any) {
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "ProyectoRepo_" + id;
+    this.imageService.uploadImage($event, name);
   }
 }

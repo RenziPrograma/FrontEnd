@@ -7,7 +7,7 @@ export class persona{
     email: string;
     telephone: string;
     profileImageUrl: string;
-    representativaImageUrl: string;
+    representaImg: string;
     description: string;
 
     constructor(
@@ -19,7 +19,7 @@ export class persona{
         email: string,
         telephone: string,
         profileImageUrl: string,
-        representativaImageUrl: string,
+        representaImg: string,
         description: string) {
         this.id = id;
         this.name = name;
@@ -29,7 +29,7 @@ export class persona{
         this.email = email;
         this.telephone = telephone;
         this.profileImageUrl = profileImageUrl;
-        this.representativaImageUrl = representativaImageUrl;
+        this.representaImg = representaImg;
         this.description = description;
         }
 
