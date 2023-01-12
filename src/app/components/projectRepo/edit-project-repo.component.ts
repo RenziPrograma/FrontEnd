@@ -40,31 +40,6 @@ export class EditProjectRepoComponent implements OnInit {
   
   }
 
-
-  /////// otro intento//////
-  //    onUpdate(): void {
-  //      const id = this.activatedRouter.snapshot.params['id'];
-  //      if (this.imageService.url != "") {
-  //        this.project.img = this.imageService.url;
-  //      }
-  //     this.projectRepoService.update(id, this.project).subscribe(
-  //       data => {
-  //          this.router.navigate(['']);
-  //        }, err => {
-  //          alert("Error al modificar proyecto");
-  //          this.router.navigate(['']);
-  //        }
-  //            )
-  //      this.imageService.clearUrl();
-  //          }
-
-
-  // uploadImage($event:any) {
-
-  // const carpeta = "ProyectoRepo_"
-  // this.imageService.uploadImage($event, carpeta);
-  // }
-
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.project.img = this.imageService.url;

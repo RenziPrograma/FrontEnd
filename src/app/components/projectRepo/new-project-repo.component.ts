@@ -32,7 +32,7 @@ export class NewProjectRepoComponent implements OnInit {
 
   onCreate(): void {
 
-    
+
     const projectRepo = new ProjectRepo(
       this.id,
       this.persona_id,
