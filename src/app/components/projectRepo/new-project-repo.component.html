@@ -2,6 +2,9 @@
     <div class="row">
         <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
             <div class="form-group">
+                <label
+                    for="id"><!--Este es un ID que se genera automáticamente para identificar la imagen con este proyecto en firebase--></label>
+                <input type="hidden" class="form-control" id="id" name="id" [(ngModel)]="id" required>
                 <label for="persona_id"> </label>
                 <input type="hidden" class="form-control" id="persona_id" name="persona_id" [(ngModel)]="persona_id"
                     required>
@@ -11,9 +14,12 @@
                 <input type="text" class="form-control" id="" name="link" [(ngModel)]="link" required>
 
                 <label for="img"> Imagen del repositorio</label>
+                <br>
+                <h6>Por favor espera a que muestre por consola la url de la imagen para confirmar la carga en firebase
+                </h6>
                 <input type="file" class="form-control" id="img" name="img" [(ngModel)]="img"
                     (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
-
+                <br>
                 <label for="description"> Descripción del repositorio</label>
                 <input type="text" class="form-control" id="description" name="description" [(ngModel)]="description"
                     required>

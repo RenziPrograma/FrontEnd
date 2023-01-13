@@ -11,24 +11,27 @@
                 <label for="position"> Posición</label>
                 <input type="text" class="form-control" id="position" name="position" [(ngModel)]="persona.position"
                     required>
-                <label for="base">
-                    <base href="">
-                </label>
+                <label for="base">Ubicación</label>
                 <input type="text" class="form-control" id="base" name="base" [(ngModel)]="persona.base" required>
-                <label for="email"> Ubicación</label>
+                <label for="email">Email</label>
                 <input type="text" class="form-control" id="email" name="email" [(ngModel)]="persona.email" required>
                 <label for="telephone"> Teléfono</label>
                 <input type="text" class="form-control" id="telephone" name="telephone" [(ngModel)]="persona.telephone"
                     required>
 
                 <label for="img"> Foto de perfil</label>
+                <br>
+                <h6>Por favor espera a que muestre por consola la url de la imagen para confirmar la carga en firebase
+                </h6>
                 <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.profileImageUrl"
                     (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
 
-              <label for="img"> Imagen representativa</label>
+                <label for="img"> Imagen representativa</label>
+                <br>
+                <h6>Por favor espera a que muestre por consola la url representativa para confirmar la carga en firebase
+                </h6>
                 <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.representaImg"
                     (change)="uploadImage2($event)" accept=".jpg, .jpeg, .png" required>
-
 
                 <label for="description"> Descripción</label>
                 <input type="text" class="form-control" id="description" name="description"

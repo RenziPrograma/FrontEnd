@@ -11,7 +11,7 @@ import { ProjectRepoService } from 'src/app/services/project-repo.service';
   styleUrls: ['./new-project-repo.component.css']
 })
 export class NewProjectRepoComponent implements OnInit {
-  id: number;
+  id: number = Date.now();
   persona_id: number = 1;
   name: string;
   link: string;
@@ -58,7 +58,7 @@ export class NewProjectRepoComponent implements OnInit {
 
   uploadImage($event: any) {
     const id = this.activatedRouter.snapshot.params['id'];
-    const name = "ProyectoRepo_" + id;
+    const name = "ProyectoRepo_" + this.id;
     this.imageService.uploadImage($event, name);
   }
 }
