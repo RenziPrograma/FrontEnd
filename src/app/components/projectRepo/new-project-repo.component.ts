@@ -18,7 +18,7 @@ export class NewProjectRepoComponent implements OnInit {
   img: string;
   description: string;
   safeImageUrl: any;
-  project: ProjectRepo;
+  
 
   constructor(private projectRepoService: ProjectRepoService,
     private router: Router,
@@ -28,20 +28,22 @@ export class NewProjectRepoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    
   }
 
   onCreate(): void {
-
+    this.safeImageUrl = this.sanitizer.bypassSecurityTrustUrl(this.img);
 
     const projectRepo = new ProjectRepo(
       this.id,
       this.persona_id,
       this.name,
       this.link,
-      this.img,
+      this.img = this.imageService.url,
       this.description
+      
     );
-    this.projectRepoService.save(projectRepo).subscribe(
+      this.projectRepoService.save(projectRepo).subscribe(
       data => {
         alert("Nuevo proyecto añadido exitosamente al repositorio");
         this.router.navigate(['']);
