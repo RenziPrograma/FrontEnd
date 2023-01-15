@@ -13,8 +13,7 @@
 
                 <label for="img"> Imagen ilustrativa</label>
                 <br>
-                <h6>Por favor espera a que muestre por consola la url de la imagen para confirmar la carga en firebase
-                </h6>
+
                 <input type="file" class="form-control" id="img" name="img" [(ngModel)]="project.img"
                     (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
 

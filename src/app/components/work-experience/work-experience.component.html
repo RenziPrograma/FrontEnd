@@ -3,7 +3,7 @@
         <div class="col-sm-12">
 
             <div class="card-title" ><a href="#" class="btn-left" routerLink="/newExp" *ngIf="isLogged">
-                <i class="fa-solid fa-plus"></i></a>
+               Agregar nueva experiencia <i class="fa-solid fa-plus"></i></a>
                 <div class="card-body">
                     <h2 class="my-4"> <i class="fas fa-certificate"></i> Experiencia laboral</h2>
                     
@@ -25,8 +25,8 @@
                             </div>
                             <h5> {{experiencia.businessName}} </h5>
                             <p>{{experiencia.position}}</p>
-                            <h6><i class="fas fa-calendar my-2 mx-2"></i>
-                                <time>{{experiencia.startDate}}</time> - <time>{{experiencia.endDate}}</time>
+                            <h6><i class="fas fa-calendar mr-2" ></i>
+                                <time> {{experiencia.startDate}}</time> - <time>{{experiencia.endDate}}</time>
                             </h6>
 
                             <h4>Descripción:</h4>

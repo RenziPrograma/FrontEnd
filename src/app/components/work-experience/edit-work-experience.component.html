@@ -13,10 +13,10 @@
                 <label for="description"> Descripción</label>
                 <input type="text" class="form-control" id="description" name="description" [(ngModel)]="expLab.description"
                     required>
-                <label for="startDate"> Fecha de inicio</label>
+                <label for="startDate"> Fecha de inicio en formato  DD-MM-AA</label>
                 <input type="text" class="form-control" id="startDate" name="startDate" [(ngModel)]="expLab.startDate"
                     required>
-                <label for="endDate"> Fecha de finalización</label>
+                <label for="endDate"> Fecha de finalización en formato  DD-MM-AA. Si no ha finalizado, ingresar actualmente</label>
                 <input type="text" class="form-control" id="endDate" name="endDate" [(ngModel)]="expLab.endDate" required>
             </div>
             <br>

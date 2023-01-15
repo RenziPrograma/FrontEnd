@@ -1,6 +1,6 @@
 <div class="card mat-card">
     <div class="row"><a href="#" class="btn-right" routerLink="/newProject" *ngIf="isLogged">
-            <i class="fa-solid fa-plus"></i></a>
+        Agregar nuevo proyecto    <i class="fa-solid fa-plus"></i></a>
         <div class="container">
             <h2><i class="fas fa-certificate"></i>Mi repositorio de proyectos</h2>
             <div class="col-sm-12  info" *ngFor="let project of project">
@@ -18,7 +18,7 @@
                         routerLink="/newProject" *ngIf="isLogged">
                         <i class="fa-solid fa-plus"></i></a>
                 </div>
-            <a href={{project.link}}><h3>{{project.name}}</h3></a>
+            <a href={{project.link}} target="blank"><h3>{{project.name}}</h3></a>
                 <p>
                     {{project.description}}
                 </p>
