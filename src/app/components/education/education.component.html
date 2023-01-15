@@ -3,7 +3,7 @@
         <div class="col-sm-12">
 
             <div class="card-title"><a href="#" class="btn-right" routerLink="/newEdu" *ngIf="isLogged">
-                <i class="fa-solid fa-plus"></i></a>
+            Agregar nueva educación<i class="fa-solid fa-plus"></i></a>
                 <div class="card-body">
                     <h2 class="my-4"> <i class="fas fa-certificate"></i> Educación</h2>
                     <ul>
@@ -24,8 +24,8 @@
                             </div>
                             <h5> {{education.schoolName}} </h5>
                             <p>{{education.degree}}</p>
-                            <h6><i class="fas fa-calendar my-2 mx-2"></i>
-                                <time>{{education.startDate}}</time> - <time>{{education.endDate}}</time>
+                            <h6><i class="fas fa-calendar mr-2 "></i>
+                                <time> {{education.startDate}}</time> - <time>{{education.endDate}}</time>
                             </h6>
 
                             <h4>Descripción:</h4>

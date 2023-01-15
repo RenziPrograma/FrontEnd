@@ -10,7 +10,18 @@ import { TokenService } from 'src/app/services/token.service';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-  persona: persona = null;
+  persona: persona = {
+    name: '',
+    surname: '',
+    position: '',
+    base: '',
+    email: '',
+    telephone: '',
+    profileImageUrl: '',
+    representaImg: '',
+    description: ''
+  };
+
 
   constructor(private personaService: PersonaService, private tokenService: TokenService, private router: Router) { }
   isLogged = false;
